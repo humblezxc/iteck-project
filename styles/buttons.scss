@@ -1,3 +1,18 @@
 .button {
-  border: 5px solid blue;
+  border: 1px solid var(--grey-color);
+  border-radius: 10px;
+  transition: var(--transition);
+  font: var(--smaller-font);
+  cursor: pointer;
+
+  &:hover, &:active,&:focus {
+    border-color: var(--violet-color);
+  }
+
+  &--round {
+    --size: 40px;
+    height: var(--size);
+    width: var(--size);
+    border-radius: 50%
+  }
 }
