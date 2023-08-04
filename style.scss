@@ -1,16 +1,23 @@
 @use './styles/global';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 
 html {
-  background: aqua;
+  background: var(--white-color);
 }
 
-body, ul, li, p, h1, h2, h3, h4, h5, h6 {
+body, ul, li, p, h1, h2, h3, h4, h5, h6, button {
   margin: 0;
   padding: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
 li {
