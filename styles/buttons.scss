@@ -8,6 +8,7 @@
   padding: 0 var(--gap);
   height: var(--size);
   border: 1px solid var(--grey-color);
+  color: var(--black-color);
   border-radius: var(--size);
   transition: var(--transition);
   font: var(--smaller-font);
@@ -28,5 +29,20 @@
 
     width: var(--size);
     border-radius: 50%
+  }
+
+  &_active {
+    border-color: var(--violet-color);
+    background-color: var(--violet-color);
+    color: var(--white-color);
+
+    svg {
+      fill: var(--white-color);
+    }
+  }
+
+  &_bigger {
+    height: calc(var(--size) * 1.15);
+    padding: 0 calc(var(--gap) * 1.5);
   }
 }
