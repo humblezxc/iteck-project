@@ -15,6 +15,17 @@ footer {
     background-size: cover;
     background-position: center;
     z-index: -1;
+
+    animation: wave 2s ease-in-out infinite alternate both;
+
+    @keyframes wave {
+      0% {
+        transform: rotate(1deg);
+      }
+      100% {
+        transform: rotate(-1deg);
+      }
+    }
   }
 
   .footer__container, .footer__top {
