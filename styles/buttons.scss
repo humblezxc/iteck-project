@@ -1,5 +1,7 @@
+@use "variables" as v;
+
 .button {
-  --size: 40px;
+  --size: 30px;
 
   display: flex;
   justify-content: center;
@@ -8,6 +10,7 @@
   padding: 0 var(--gap);
   height: var(--size);
   border: 1px solid var(--grey-color);
+
   color: var(--black-color);
   border-radius: var(--size);
   transition: var(--transition);
@@ -44,5 +47,20 @@
   &_bigger {
     height: calc(var(--size) * 1.15);
     padding: 0 calc(var(--gap) * 1.5);
+  }
+
+  @media (min-width: v.$tablet) {
+    --size: 40px;
+  }
+
+  &_white {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    height: 20px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
   }
 }

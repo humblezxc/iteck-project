@@ -3,14 +3,21 @@
   transition: var(--transition);
   font-weight: 700;
 
-  &:hover, &:active, &:focus {
+  &:hover, &:active, &:focus, &_active {
     color: var(--violet-color);
   }
-}
 
-.link_active {
-  color: var(--violet-color);
-}
-.link_decoration {
-  text-decoration: underline;
+  &_decoration {
+    text-decoration: underline;
+  }
+  &_small {
+    font: var(--smaller-font);
+    text-decoration: underline;
+    color: var(--white-color);
+    white-space: nowrap;
+
+    &:hover, &:active, &:focus, &_active {
+      color: var(--blue-color);
+    }
+  }
 }
