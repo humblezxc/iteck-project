@@ -25,9 +25,48 @@ header {
   }
 
   .header__buttons {
+    position: relative;
     width: 208px;
     display: flex;
+    align-items: center;
     gap: var(--gap);
+  }
+
+  .header__lang {
+    --lang-width: 30px;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    img {
+      height: var(--lang-width);
+      width: var(--lang-width);
+      padding-right: 10px;
+    }
+  }
+  .header__langs {
+    position: absolute;
+    top: 45px;
+    right: 0;
+
+    display: flex;
+    flex-direction:  column;
+    align-items: flex-start;
+
+    width: 100px;
+    background-color: var(--creame-color);
+    padding: 10px 0;
+    border-radius: 20px;
+  }
+  a {
+    width: 100%;
+    padding: 5px 10px;
+
+    &:hover {
+      background-color: var(--white-color);
+    }
+
   }
 }
 
