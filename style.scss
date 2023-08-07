@@ -21,6 +21,7 @@ body, ul, li, p, h1, h2, h3, h4, h5, h6, button {
 a {
   text-decoration: none;
   color: var(--black-color);
+  transition: var(--transition);
 }
 
 button {

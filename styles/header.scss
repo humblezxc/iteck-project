@@ -47,26 +47,25 @@ header {
   }
   .header__langs {
     position: absolute;
-    top: 45px;
-    right: 0;
+    top: 40px;
+    right: 30px;
 
     display: flex;
     flex-direction:  column;
     align-items: flex-start;
 
-    width: 100px;
+    width: 120px;
     background-color: var(--creame-color);
-    padding: 10px 0;
+    padding: 15px 0;
     border-radius: 20px;
-  }
-  a {
-    width: 100%;
-    padding: 5px 10px;
+    a {
+      width: calc(100% - 60px);
+      padding: 5px 30px;
 
-    &:hover {
-      background-color: var(--white-color);
+      &:hover {
+        background-color: var(--white-color);
+      }
     }
-
   }
 }
 
