@@ -7,7 +7,7 @@ header, main, footer {
 }
 
 .container {
-  width: calc(100% - var(--gap)*2);
+  width: calc(100% - var(--gap) * 2);
   padding: var(--gap);
 
   @media (min-width: v.$bigger-mobile) {
